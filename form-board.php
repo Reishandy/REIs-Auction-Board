@@ -101,7 +101,7 @@ if (!isset($_SESSION["logged_in"])) {
             <input type="hidden" name="email" id="email" value="<?php echo $_SESSION["email"]?>">
             <input type="hidden" name="server" id="server" value="<?php echo $_SESSION["server"]?>">
 
-            <h3 class="text-center font-subtitle">Input item details to sell</h3>
+            <h3 class="text-center font-subtitle">Input item details to auction</h3>
             <hr class="bg-danger border-2 border-top"/>
 
             <div class="form-floating mb-3 rounded-5 has-validation">

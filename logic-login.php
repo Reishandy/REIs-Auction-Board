@@ -49,7 +49,7 @@ try {
                 exit();
             }
         } else {
-            eader("Location: form-login.php?error='Login failed'");
+            header("Location: form-login.php?error='Login failed'");
             exit();
         }
 
