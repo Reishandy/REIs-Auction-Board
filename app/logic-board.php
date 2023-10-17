@@ -2,13 +2,10 @@
 function loadDatabase(): mysqli
 {
     // Init the database
-    $database = "board";
-    $userName = "root";
-    $password = "";
-    $hostname = "localhost";
+    require_once "../config.php";
 
     try {
-        $dbh = new mysqli($hostname, $userName, $password, $database);
+        $dbh = new mysqli(HOSTNAME, USERNAME, PASSWORD, DATABASE);
     } catch (mysqli_sql_exception) {
         die("
                 <div class='alert alert-danger' role='alert'>

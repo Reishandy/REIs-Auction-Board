@@ -1,3 +1,3 @@
 <?php
-header("Location: form-board.php");
+header("Location: ./app/form-board.php");
 exit();

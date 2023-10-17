@@ -1,12 +1,9 @@
 <?php
 
-$hostname = "localhost";
-$username = "root";
-$password = "";
-$database = "board";
+require_once "../config.php";
 
 try {
-    $dbh = new mysqli($hostname, $username, $password, $database);
+    $dbh = new mysqli(HOSTNAME, USERNAME, PASSWORD, DATABASE);
 } catch (mysqli_sql_exception) {
     die("ERROR!!! Database connection failed ＞︿＜");
 }
