@@ -6,4 +6,6 @@ RewriteRule ^app/ - [L]
 
 RewriteRule ^\.htaccess$ - [F]
 
-RewriteRule ^\config.php - [F]
+<Files "config.php">
+    Require all denied
+</Files>
