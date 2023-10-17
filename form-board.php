@@ -38,6 +38,7 @@ if (!isset($_SESSION["logged_in"])) {
         insertDatabase($dbh);
         removeDatabase($dbh);
         bid($dbh);
+        updateDate($dbh);
         $entries = getDatabase($dbh);
         ?>
 
@@ -86,11 +87,11 @@ if (!isset($_SESSION["logged_in"])) {
             <h3>Your details</h3>
             <hr class="bg-danger border-2 border-top"/>
 
-            <h2>Username: <?php echo $_SESSION["username"]?></h2>
+            <h2>Username: </h2> <h2 style="color: white"><?php echo $_SESSION["username"]?></h2>
 
-            <h2>Email: <?php echo $_SESSION["email"]?></h2>
+            <h2>Email: </h2> <h2 style="color: white"><?php echo $_SESSION["email"]?></h2>
 
-            <h2>Server: <?php echo $_SESSION["server"]?></h2>
+            <h2>Server: </h2> <h2 style="color: white"><?php echo $_SESSION["server"]?></h2>
 
             <br>
         </div>

@@ -26,7 +26,7 @@
     }
 ?>
 
-<div class="container d-flex justify-content-center align-items-center p-5" style="margin-top: 0px">
+<div class="container d-flex justify-content-center align-items-center p-5" style="margin-top: 30px">
     <div class="rounded-5 p-5 shadow-lg ">
         <h1 class="text-center font-title">Registration</h1><br>
 

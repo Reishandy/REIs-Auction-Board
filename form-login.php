@@ -26,7 +26,7 @@
     }
 ?>
 
-<div class="container d-flex justify-content-center align-items-center p-5" style="margin-top: 50px">
+<div class="container d-flex justify-content-center align-items-center p-5" style="margin-top: 65px">
     <div class="rounded-5 p-5 shadow-lg ">
         <h1 class="text-center font-title">Login</h1><br>
 
