@@ -36,24 +36,21 @@ try {
                     $_SESSION["server"] = $row["server"];
 
                     header("Location: form-board.php");
-                    exit();
                 } else {
                     header("Location: form-login.php?error='Wrong password'");
-                    exit();
                 }
             } else {
                 header("Location: form-login.php?error='No user found with the username of " . $username . "'");
-                exit();
             }
         } else {
             header("Location: form-login.php?error='Login failed'");
-            exit();
         }
-
-        $stmt->close();
+        exit();
     } else {
         echo "Error: " . $sql . "<br>" . $dbh->error;
     }
+
+    $stmt->close();
 } catch (mysqli_sql_exception $e) {
     $dbh->rollback();
     echo "Error: " . $e->getMessage();

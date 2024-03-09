@@ -100,7 +100,7 @@ function bid($dbh): void
     }
 }
 
-function updateDate($dbh)
+function updateDate($dbh): void
 {
     if (isset($_POST["dateUpdate"])) {
         $id = $_POST["dateUpdate"];
